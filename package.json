@@ -50,6 +50,7 @@
     "jquery": "^3.7.1",
     "jsdom": "^22.1.0",
     "swiper": "^11.0.5",
-    "inputmask": "^5.0.8"
+    "inputmask": "^5.0.8",
+    "circletype": "^2.3.0"
   }
 }

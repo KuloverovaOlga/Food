@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   try {
     guaranteeCircles();
   } catch {}
+
 });
 
 function burgerMenu() {
@@ -65,12 +66,13 @@ function phoneMask() {
   mask.mask($('.phone-mask'));
 }
 
-function guaranteeCircles () {
-    const circles = document.querySelectorAll('.guarantee-banner__circle')
+function guaranteeCircles() {
+  const circles = document.querySelectorAll('.guarantee-banner__circle');
 
-    circles.forEach(circle => {
-        const circleType = new CircleType(circle);
-        circle.style.transform = 'rotate(105deg)';
-    })
+  circles.forEach((circle) => {
+    const circleType = new CircleType(circle);
+    circle.style.transform = 'rotate(105deg)';
+  });
 }
+
 

@@ -2,8 +2,8 @@ import popup from '../utils/popup';
 import form from '../utils/form';
 import CircleType from 'circletype';
 import 'inputmask';
-import Swiper from "swiper/bundle";
-import "swiper/css/bundle";
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 export const modules = {};
 window.$ = window.jQuery = require('jquery');
@@ -39,6 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
   } catch {}
   try {
     reviewsSwiper();
+  } catch {}
+  try {
+    showMore();
   } catch {}
 });
 
@@ -131,7 +134,7 @@ function ourWorksSwiper() {
     breakpoints: {
       768: {
         slidesPerView: 'auto',
-        spaceBetween: rem(3.2),
+        spaceBetween: rem(3.2)
       }
     }
   });
@@ -153,7 +156,7 @@ function otherServicesSwiper() {
     breakpoints: {
       768: {
         slidesPerView: 3,
-        spaceBetween: rem(3.2),
+        spaceBetween: rem(3.2)
       }
     }
   });
@@ -171,8 +174,57 @@ function reviewsSwiper() {
     navigation: {
       nextEl: '.reviews-swiper__btn--next',
       prevEl: '.reviews-swiper__btn--prev'
-    },
-
-    
+    }
   });
+}
+
+function showMore() {
+  const elem = document.querySelector('.seo__text-box');
+
+  let size = window.innerWidth > 768 ? 1598 : 512;
+  let text = elem.innerHTML;
+
+  window.addEventListener('resize', () => {
+    size = window.innerWidth > 768 ? 1598 : 512;
+    if (elem.hasAttribute('data-short')) {
+      text_crop();
+    }
+  });
+
+  function maxHeight() {
+    elem.style.maxHeight = `${elem.scrollHeight}px`;
+  }
+
+  function text_crop() {
+    elem.setAttribute('data-fulltext', text);
+
+    if (text.length > size) {
+      const text2 = text.slice(0, size - 10);
+      elem.innerHTML = text2 + '...';
+      elem.setAttribute('data-short', true);
+      elem.style.maxHeight = window.innerWidth > 768 ? '59rem' : '44.8rem';
+    }
+  }
+
+  function expandText() {
+    const fullText = elem.getAttribute('data-fulltext');
+    if (elem.hasAttribute('data-short')) {
+      elem.innerHTML = fullText;
+      elem.style.maxHeight = 'auto';
+      elem.removeAttribute('data-short');
+      maxHeight();
+      elem.parentElement.classList.add('isActive');
+      window.addEventListener('resize', maxHeight);
+    } else {
+      window.removeEventListener('resize', maxHeight);
+      elem.style.maxHeight = window.innerWidth > 768 ? '59rem' : '44.8rem';
+      elem.parentElement.classList.remove('isActive');
+      setTimeout(() => {
+        text_crop();
+      }, 300);
+    }
+  }
+
+  text_crop();
+  document.querySelectorAll('.seo__btn').forEach((item) => item.addEventListener('click', expandText));
 }

@@ -50,6 +50,9 @@
   font-weight: 600;
   line-height: 100%;
   letter-spacing: -0.01em;
+  @media (max-width: 48em) {
+    font-size: 4rem;
+  }
 }
 
 // --------------------------------------------------------------------------
@@ -97,12 +100,11 @@
 }
 
 .logo {
-    font-family: 'NeueMetana';
-    font-weight: 700;
-    font-size: 3.2rem;
-    text-transform: uppercase;
-    @media (max-width: 48em) {
-        font-size: 4.6rem;
-      }
-
+  font-family: 'NeueMetana';
+  font-weight: 700;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  @media (max-width: 48em) {
+    font-size: 4.6rem;
+  }
 }

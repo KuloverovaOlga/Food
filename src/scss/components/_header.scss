@@ -3,7 +3,7 @@
 
   &__mob {
     display: none;
-    @media (max-width: 48em) {
+    @include small-tablet {
       display: flex;
       position: relative;
       z-index: 100;

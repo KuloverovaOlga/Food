@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
   try {
     showMore();
   } catch {}
+  try {
+    pricesTabs();
+  } catch {}
 });
 
 function burgerMenu() {
@@ -227,4 +230,50 @@ function showMore() {
 
   text_crop();
   document.querySelectorAll('.seo__btn').forEach((item) => item.addEventListener('click', expandText));
+}
+
+function pricesTabs() {
+  const buttons = document.querySelectorAll('.prices__tabs-btn ');
+  const tabs = document.querySelectorAll('.prices__tabs-tab');
+
+  buttons.forEach((button, i) => {
+    button.addEventListener('click', () => {
+      buttons.forEach((item) => item.classList.remove('active'));
+      tabs.forEach((tabs) => tabs.classList.remove('active'));
+      button.classList.add('active');
+      tabs[i].classList.add('active');
+    });
+  });
+
+  const btnsShowMore = document.querySelectorAll('.prices__btn');
+
+
+  btnsShowMore.forEach((item) => {
+
+    item.addEventListener('click', () => {
+      if (item.parentElement.parentElement.classList.contains('active')) {
+        item.parentElement.parentElement.classList.remove('active');
+        item.parentElement.parentElement
+        .querySelectorAll('.prices__tabs-tab-item--mob')
+        .forEach((item) => (item.style.maxHeight = ''));
+      } else {
+        item.parentElement.parentElement.classList.add('active');
+        item.parentElement.parentElement
+          .querySelectorAll('.prices__tabs-tab-item--mob')
+          .forEach((item) => (item.style.maxHeight = `${item.scrollHeight}px`));
+      
+      }
+    });
+  });
+ const wrappers =  document.querySelectorAll('.prices__tabs-tab-item-wrapper')
+
+  window.addEventListener('resize', () => {
+    wrappers.forEach(item => {
+    if(item.classList.contains('active')) {
+      item
+      .querySelectorAll('.prices__tabs-tab-item--mob')
+      .forEach((item) => (item.style.maxHeight = `${item.scrollHeight}px`));
+    }
+    })
+  })
 }

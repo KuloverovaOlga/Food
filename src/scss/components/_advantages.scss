@@ -5,7 +5,7 @@
     display: flex;
     align-items: flex-start;
     gap: 11.7rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       flex-direction: column;
       gap: 8rem;
     }
@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       width: 100%;
       gap: 4rem;
     }
@@ -33,7 +33,7 @@
 
   &__desk {
     width: 53.3rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       width: 100%;
     }
   }
@@ -45,7 +45,7 @@
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       gap: 1.6rem;
       width: 100%;
     }
@@ -62,7 +62,7 @@
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       gap: 6.4rem;
       padding: 3.2rem;
     }
@@ -78,7 +78,7 @@
       height: 100%;
       object-fit: cover;
     }
-    @media (max-width: 48em) {
+  @include small-tablet {
       width: 12rem;
       height: 12rem;
     }
@@ -90,7 +90,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       gap: 1.6rem;
     }
   }

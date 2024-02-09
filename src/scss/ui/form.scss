@@ -18,7 +18,7 @@
   &::placeholder {
     // color: $textAndLine;
   }
-  @media (max-width: 48em) {
+  @include small-tablet {
     padding-bottom: 1.6rem;
   }
 }
@@ -42,8 +42,7 @@
     opacity: 1;
     line-height: normal;
   }
-
-  @media (max-width: 48em) {
+  @include small-tablet {
     bottom: -3rem;
   }
 }

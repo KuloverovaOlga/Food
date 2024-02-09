@@ -5,9 +5,9 @@
     display: flex;
     flex-direction: column;
     gap: 4.8rem;
-  @include small-tablet {
-        gap: 8rem;
-      }
+    @include small-tablet {
+      gap: 8rem;
+    }
   }
 
   // .other-services-swiper__title
@@ -15,10 +15,10 @@
   &__title {
     align-self: center;
     text-align: center;
-  @include small-tablet {
-        align-self: flex-start;
-        text-align: left;
-      }
+    @include small-tablet {
+      align-self: flex-start;
+      text-align: left;
+    }
   }
 
   // .other-services-swiper__swiper
@@ -30,8 +30,6 @@
   // .other-services-swiper__swiper-wrapper
 
   &__swiper-wrapper {
-
-
   }
 
   // .other-services-swiper__swiper-slide
@@ -90,21 +88,21 @@
       }
     }
 
-  @include small-tablet {
-        margin: 0;
-        padding: 3.2rem 3.2rem 5.2rem;
-        border-radius: 7.2rem;
-        &:hover {
-            &::before {
-              transform: scale(1);
-              opacity: 0;
-            }
-            &::after {
-              transform: scale(1);
-              opacity: 0;
-            }
-          }
+    @include small-tablet {
+      margin: 0;
+      padding: 3.2rem 3.2rem 5.2rem;
+      border-radius: 7.2rem;
+      &:hover {
+        &::before {
+          transform: scale(1);
+          opacity: 0;
+        }
+        &::after {
+          transform: scale(1);
+          opacity: 0;
+        }
       }
+    }
   }
 
   // .other-services-swiper__swiper-slide-img-box
@@ -119,11 +117,11 @@
       height: 100%;
       object-fit: cover;
     }
-  @include small-tablet {
-        width: 62.2rem;
-        height: 54.4rem;
-        border-radius: 6.4rem;
-      }
+    @include small-tablet {
+      width: 62.2rem;
+      height: 54.4rem;
+      border-radius: 6.4rem;
+    }
   }
 
   // .other-services-swiper__swiper-slide-text-box
@@ -132,9 +130,9 @@
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-  @include small-tablet {
-        gap: 1.6rem;
-      }
+    @include small-tablet {
+      gap: 1.6rem;
+    }
   }
 
   // .other-services-swiper__swiper-slide-title
@@ -142,6 +140,11 @@
   &__swiper-slide-title {
     padding-left: 1.8rem;
     position: relative;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; // количество строк
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
     &::before {
       position: absolute;
       content: '';
@@ -153,18 +156,23 @@
       top: 50%;
       transform: translateY(-50%);
     }
-  @include small-tablet {
-        padding-left: 3.6rem;
-        &::before {
-            width: 2rem;
-            height: 2rem;  
-        }
+    @include small-tablet {
+      padding-left: 3.6rem;
+      &::before {
+        width: 2rem;
+        height: 2rem;
       }
+    }
   }
 
   // .other-services-swiper__swiper-slide-desk
 
   &__swiper-slide-desk {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   // .other-services-swiper__swiper-slide-svg-box
@@ -174,14 +182,14 @@
     width: 2.2rem;
     height: 1.4rem;
     & svg {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-  @include small-tablet {
-        width: 4.4rem;
-        height: 2.8rem;
-      }
+    @include small-tablet {
+      width: 4.4rem;
+      height: 2.8rem;
+    }
   }
 
   // .other-services-swiper__btn-box
@@ -193,10 +201,10 @@
     justify-content: center;
     width: 100%;
     margin-top: 2.6rem;
-  @include small-tablet {
-        margin-top: 6.4rem;
-        gap: 2.4rem;
-      }
+    @include small-tablet {
+      margin-top: 6.4rem;
+      gap: 2.4rem;
+    }
   }
 
   // .other-services-swiper__btn

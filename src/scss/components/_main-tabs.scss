@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 4.8rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       gap: 4rem;
     }
   }
@@ -24,11 +24,12 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       overflow-y: hidden;
       overflow-x: scroll;
-      width: calc(100% + 3.2rem);
+      width: calc(100% + 6.4rem);
       margin-right: -3.2rem;
+      margin-left: -3.2rem;
       justify-content: flex-start;
       gap: 1.6rem;
       &::-webkit-scrollbar {
@@ -40,10 +41,13 @@
   // .main-tabs__tabs-btn
 
   &__tabs-btn {
-    @media (max-width: 48em) {
+  @include small-tablet {
       white-space: nowrap;
       &:last-child {
         margin-right: 3.2rem;
+      }
+      &:first-child {
+        margin-left: 3.2rem;
       }
     }
   }
@@ -74,7 +78,7 @@
       opacity: 1;
       visibility: visible;
     }
-    @media (max-width: 48em) {
+  @include small-tablet {
       grid-template-columns: 1fr;
       padding: 3.2rem 3.2rem 21.2rem;
       position: relative;
@@ -88,7 +92,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @media (max-width: 48em) {
+  @include small-tablet {
       grid-row: 3/4;
       gap: 6.4rem;
       padding: 6.4rem 0;
@@ -100,7 +104,7 @@
   &__tabs-tab-info-wrapper {
     display: flex;
     flex-direction: column;
-    @media (max-width: 48em) {
+  @include small-tablet {
       flex-direction: row;
       gap: 0.8rem;
       align-items: flex-end;
@@ -124,7 +128,7 @@
       color: $Blue;
       font-weight: 600;
     }
-    @media (max-width: 48em) {
+  @include small-tablet {
       width: 100%;
       letter-spacing: -0.015em;
       & br {
@@ -139,7 +143,7 @@
     padding: 0 3.5rem;
     border-right: 1px solid $white;
     border-left: 1px solid $white;
-    @media (max-width: 48em) {
+  @include small-tablet {
       padding: 0;
       border-right: none;
       border-left: none;
@@ -159,7 +163,7 @@
       height: 100%;
       object-fit: cover;
     }
-    @media (max-width: 48em) {
+  @include small-tablet {
       width: 62.2rem;
       min-height: 49.8rem;
       height: 49.8rem;
@@ -174,7 +178,7 @@
     justify-content: space-between;
     align-items: flex-end;
     gap: 3.2rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       padding: 6.4rem 0;
       align-items: flex-start;
     }
@@ -187,7 +191,7 @@
     flex-direction: column;
     gap: 3.2rem;
     align-items: flex-end;
-    @media (max-width: 48em) {
+  @include small-tablet {
       align-items: flex-start;
       gap: 4rem;
     }
@@ -202,7 +206,7 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 0.8rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       align-items: flex-start;
       gap: 1.6rem;
     }
@@ -216,7 +220,7 @@
   // .main-tabs__contact-button
 
   &__contact-button {
-    @media (max-width: 48em) {
+  @include small-tablet {
       position: absolute;
       bottom: 5.2rem;
       left: 3.2rem;

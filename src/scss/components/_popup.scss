@@ -76,7 +76,7 @@ body::before {
     display: flex;
     background-color: $white;
     border-radius: 7rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       flex-direction: column-reverse;
     }
   }
@@ -103,7 +103,7 @@ body::before {
       pointer-events: none;
     }
 
-    @media (max-width: 48em) {
+  @include small-tablet {
         right: 0;
         top: -4.4rem;
         & svg {
@@ -135,7 +135,7 @@ body::before {
       height: 100%;
       object-fit: cover;
     }
-    @media (max-width: 48em) {
+  @include small-tablet {
       width: 69rem;
       height: 63.2rem;
       min-height: auto;
@@ -154,7 +154,7 @@ body::before {
     flex-direction: column;
     justify-content: center;
     gap: 4rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       width: 100%;
       margin: 0;
       padding: 5.2rem 3.2rem 8rem;
@@ -168,7 +168,7 @@ body::before {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       gap: 4rem;
     }
   }
@@ -184,7 +184,7 @@ body::before {
   &__body-content-box-desk {
     &--short {
       width: 31.7rem;
-      @media (max-width: 48em) {
+    @include small-tablet {
         width: 100%;
       }
     }
@@ -199,13 +199,13 @@ body::before {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       gap: 5.4rem;
     }
   }
   &__application-subtitle {
     line-height: 130%;
-    @media (max-width: 48em) {
+  @include small-tablet {
       font-size: 2.4rem;
     }
   }

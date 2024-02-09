@@ -5,7 +5,7 @@
     display: flex;
     align-items: flex-start;
     gap: 10rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       flex-direction: column;
       gap: 8rem;
       padding-bottom: 14rem;
@@ -21,7 +21,7 @@
     flex-direction: column;
     gap: 3.2rem;
     flex-shrink: 0;
-    @media (max-width: 48em) {
+  @include small-tablet {
       width: 100%;
       gap: 4rem;
     }
@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -95,7 +95,7 @@
     background: rgba(255, 255, 255, 0.3);
     display: flex;
     gap: 4rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       padding: 3.2rem 3.2rem 5.2rem;
       flex-direction: column;
     }
@@ -114,7 +114,7 @@
       height: 100%;
       object-fit: cover;
     }
-    @media (max-width: 48em) {
+  @include small-tablet {
       width: 61.8rem;
       height: 36rem;
     }
@@ -129,7 +129,7 @@
     flex-direction: column;
     gap: 4rem;
     justify-content: space-between;
-    @media (max-width: 48em) {
+  @include small-tablet {
       min-height: auto;
     }
   }
@@ -153,7 +153,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       gap: 1.6rem;
     }
   }
@@ -172,7 +172,7 @@
     display: inline-grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 0 0.8rem;
-    @media (max-width: 48em) {
+  @include small-tablet {
       gap: 0 1.6rem;
     }
 
@@ -190,7 +190,7 @@
       margin: 0;
       text-align: center;
       transition: all 0.3s ease-out;
-      @media (max-width: 48em) {
+    @include small-tablet {
         width: 4.8rem;
       }
     }
@@ -201,7 +201,7 @@
       background: url(./assets/images/star-stroke.svg) no-repeat top/cover;
       width: 2.4rem;
       height: 2.4rem;
-      @media (max-width: 48em) {
+    @include small-tablet {
         width: 4.8rem;
         height: 4.8rem;
       }

@@ -50,12 +50,12 @@ main {
 @import './components/_footer';
 section {
   padding: 9rem 0;
-  @media (max-width: 48em) {
+  @include small-tablet {
       padding: 10rem 0;
   }
   &._first {
       padding: 5.7rem 0 9rem;
-      @media (max-width: 48em) {
+      @include small-tablet {
           padding: 2.6rem 0 10rem;
       }
   }

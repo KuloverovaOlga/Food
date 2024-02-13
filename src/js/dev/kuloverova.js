@@ -46,6 +46,24 @@ document.addEventListener('DOMContentLoaded', () => {
   try {
     pricesTabs();
   } catch {}
+  try {
+    scroll();
+  } catch {}
+  try {
+    articleDetSwiper();
+  } catch {}
+  try {
+    portfolioDetSwiper();
+  } catch {}
+  try {
+    asideNavlink('.article-det__nav-link');
+  } catch {}
+  try {
+    asideNavlink('.portfolio-det__nav-link');
+  } catch {}
+  try {
+    otherArticlesSwiper();
+  } catch {}
 });
 
 function burgerMenu() {
@@ -247,33 +265,122 @@ function pricesTabs() {
 
   const btnsShowMore = document.querySelectorAll('.prices__btn');
 
-
   btnsShowMore.forEach((item) => {
-
     item.addEventListener('click', () => {
       if (item.parentElement.parentElement.classList.contains('active')) {
         item.parentElement.parentElement.classList.remove('active');
         item.parentElement.parentElement
-        .querySelectorAll('.prices__tabs-tab-item--mob')
-        .forEach((item) => (item.style.maxHeight = ''));
+          .querySelectorAll('.prices__tabs-tab-item--mob')
+          .forEach((item) => (item.style.maxHeight = ''));
       } else {
         item.parentElement.parentElement.classList.add('active');
         item.parentElement.parentElement
           .querySelectorAll('.prices__tabs-tab-item--mob')
           .forEach((item) => (item.style.maxHeight = `${item.scrollHeight}px`));
-      
       }
     });
   });
- const wrappers =  document.querySelectorAll('.prices__tabs-tab-item-wrapper')
+  const wrappers = document.querySelectorAll('.prices__tabs-tab-item-wrapper');
 
   window.addEventListener('resize', () => {
-    wrappers.forEach(item => {
-    if(item.classList.contains('active')) {
-      item
-      .querySelectorAll('.prices__tabs-tab-item--mob')
-      .forEach((item) => (item.style.maxHeight = `${item.scrollHeight}px`));
+    wrappers.forEach((item) => {
+      if (item.classList.contains('active')) {
+        item
+          .querySelectorAll('.prices__tabs-tab-item--mob')
+          .forEach((item) => (item.style.maxHeight = `${item.scrollHeight}px`));
+      }
+    });
+  });
+}
+
+function scroll() {
+  const anchors = document.querySelectorAll(`.nav-link`);
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault();
+      const blockId = anchor.getAttribute('href');
+      document.querySelector('' + blockId).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+      console.log('awdawd');
+    });
+  }
+}
+
+function articleDetSwiper() {
+  const swiperOurWorks = new Swiper('.article-det__article-item-swiper', {
+    slidesPerView: 1,
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 20,
+    speed: 300,
+    autoHeight: true,
+    // allowTouchMove: false,
+    navigation: {
+      nextEl: '.article-det__article-item-swiper-btn--next',
+      prevEl: '.article-det__article-item-swiper-btn--prev'
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: rem(3.2)
+      }
     }
-    })
-  })
+  });
+}
+
+function portfolioDetSwiper() {
+  const swiperOurWorks = new Swiper('.portfolio-det__portfolio-item-swiper', {
+    slidesPerView: 2,
+    loop: true,
+    grabCursor: true,
+    spaceBetween: rem(1.6),
+    speed: 300,
+    autoHeight: true,
+    // allowTouchMove: false,
+    navigation: {
+      nextEl: '.portfolio-det__portfolio-item-swiper-btn--next',
+      prevEl: '.portfolio-det__portfolio-item-swiper-btn--prev'
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: rem(3.2)
+      }
+    }
+  });
+}
+
+function asideNavlink(selector) {
+  const links = document.querySelectorAll(selector);
+  links.forEach((item) => {
+    item.addEventListener('click', () => {
+      links.forEach((item) => item.classList.remove('active'));
+      item.classList.add('active');
+    });
+  });
+}
+
+function otherArticlesSwiper() {
+  const swiperOurWorks = new Swiper('.other-articles-swiper__swiper', {
+    slidesPerView: 1,
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 20,
+    speed: 300,
+    autoHeight: true,
+    // allowTouchMove: false,
+    navigation: {
+      nextEl: '.other-articles-swiper__swiper-btn--next',
+      prevEl: '.other-articles-swiper__swiper-btn--prev'
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: rem(2.6)
+      }
+    }
+  });
 }

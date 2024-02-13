@@ -152,11 +152,12 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+
   & .link-svg-box {
     width: 2.4rem;
     height: 2.4rem;
     transition: transform 0.3s;
- 
+
     & svg {
       width: 100%;
       height: 100%;
@@ -168,9 +169,23 @@
     }
   }
 
-  &:hover .link-svg-box {
-    transform: translateX(0.5rem);
+  &:hover {
+    & .link-svg-box {
+      transform: translateX(0.5rem);
+    }
   }
+
+  &--rotate {
+    & .link-svg-box {
+      transform: rotate(90deg);
+    }
+    &:hover {
+      & .link-svg-box {
+        transform: rotate(90deg)  translateX(0.5rem);
+      }
+    }
+  }
+
   @include small-tablet {
     font-size: 3.2rem;
     &:hover .link-svg-box {
@@ -180,14 +195,19 @@
 }
 
 .button-swiper {
-  width: 4.4rem;
-  height: 4.4rem;
+  width: 4.4rem !important;
+  height: 4.4rem !important;
   border-radius: 50%;
   border: 1px solid $Blue;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: relative !important;
+  inset: 0 !important;
+  margin-top: 0 !important;
+  &::after {
+    display: none;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -208,8 +228,8 @@
   }
 
   @include small-tablet {
-    width: 7.2rem;
-    height: 7.2rem;
+    width: 7.2rem !important;
+    height: 7.2rem !important;
   }
 
   &--prev {

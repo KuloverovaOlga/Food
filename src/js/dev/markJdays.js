@@ -56,7 +56,6 @@ async function initMap() {
 function setCertificatesSlider() {
   const certificatesSlider = new Swiper('.certificates__swiper', {
     slidesPerView: 1,
-    spaceBetween: 20,
     loop: true,
     grabCursor: true,
     speed: 300,
@@ -67,8 +66,7 @@ function setCertificatesSlider() {
 
     breakpoints: {
       768: {
-        slidesPerView: 3,
-        spaceBetween: rem(3.2)
+        slidesPerView: 3
       }
     }
   });
@@ -96,6 +94,10 @@ function setDocsTab() {
   hiddenItems.forEach(function (item) {
     item.style.display = 'none';
   });
+
+  if (!showMoreBtn) {
+    return;
+  }
 
   showMoreBtn.addEventListener('click', function () {
     isExpanded = !isExpanded;

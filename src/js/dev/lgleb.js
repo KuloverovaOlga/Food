@@ -55,7 +55,7 @@ function swipers() {
     spaceBetween: 16,
 
     breakpoints: {
-      768: {
+      769: {
         slidesPerView: 2,
         spaceBetween: 32
       }

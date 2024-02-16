@@ -97,6 +97,10 @@ function setDocsTab() {
     item.style.display = 'none';
   });
 
+  if (!showMoreBtn) {
+    return;
+  }
+
   showMoreBtn.addEventListener('click', function () {
     isExpanded = !isExpanded;
     hiddenItems.forEach(function (item) {

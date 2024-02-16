@@ -38,6 +38,7 @@
     width: calc(100% - 53.1rem);
 
     &-toggle {
+      -moz-column-gap: 1.8rem;
       column-gap: 1.8rem;
       align-items: center;
       color: $Blue;
@@ -130,6 +131,19 @@
           height: 2rem;
           top: 1.4rem;
         }
+      }
+    }
+
+    .about-service__descr-toggle {
+      font-weight: 700;
+      font-size: 1.6rem * 2;
+      div:last-child {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
       }
     }
   }

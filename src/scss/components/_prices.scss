@@ -213,6 +213,8 @@
 
   &__btn {
     @include small-tablet {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
       width: fit-content;
       grid-column: 1/2;
       grid-row: 1/2;
@@ -220,13 +222,27 @@
       &--show {
         visibility: visible;
         opacity: 1;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
+
+        .link-svg-box {
+          transform: rotate(90deg);
+        }
       }
       &--hidden {
         visibility: hidden;
         opacity: 0;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
+
+        .link-svg-box {
+          transform: rotate(-90deg);
+        }
       }
+
+      
     }
   }
 

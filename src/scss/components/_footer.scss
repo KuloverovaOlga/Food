@@ -1,4 +1,8 @@
 .footer {
+  padding: 9rem 0 0;
+  @include small-tablet {
+    padding: 10rem 0 0;
+  }
   // .footer__top
 
   &__top {

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Доставка</title>
+  <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+      <div class="overlay"></div>
+      <header class="header" id="header">
+  <div class="header__mob">
+    <div class="container">
+      <div class="header__mob-inner">
+        <button class="header__mob-burger">
+          <span class="header__mob-burger-svg-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M4.13794 9.51709H28.1379" stroke="#28292E" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M4.13794 16.1838H28.1379" stroke="#28292E" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M4.13794 16.1838H28.1379" stroke="#28292E" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M4.13794 16.1838H28.1379" stroke="#28292E" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M4.13794 22.8506H28.1379" stroke="#28292E" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </span>
+        </button>
+        <a class="header__logo header__logo--mob logo" href="#"> LOGO </a>
+        <a href="tel:+74991362923" class="header__mob-call">
+          <div class="header__mob-call-svg-box">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.2442 13.9492C19.7271 14.4334 19.9983 15.0894 19.9983 15.7733C19.9983 16.4572 19.7271 17.1132 19.2442 17.5975L18.4859 18.4717C11.6609 25.0058 -4.94747 8.40166 1.48586 1.55499L2.4442 0.721655C2.929 0.252219 3.57914 -0.00747107 4.25395 -0.00123293C4.92876 0.0050052 5.57398 0.27667 6.05003 0.754988C6.07586 0.780821 7.62003 2.78666 7.62003 2.78666C8.07822 3.26801 8.33328 3.90743 8.3322 4.57199C8.33111 5.23655 8.07396 5.87513 7.6142 6.35499L6.6492 7.56832C7.18324 8.86592 7.96841 10.0452 8.95962 11.0384C9.95082 12.0316 11.1285 12.8192 12.425 13.3558L13.6459 12.385C14.1258 11.9256 14.7642 11.6687 15.4286 11.6678C16.093 11.6669 16.7322 11.9219 17.2134 12.38C17.2134 12.38 19.2184 13.9233 19.2442 13.9492Z" fill="#CFFA73"></path>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container header__container">
+    <div class="header__inner">
+      <a class="header__logo logo" href="#"> LOGO </a>
+
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__nav-item-link txt20" href=""> Корпоративное питание </a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-item-link txt20" href=""> Услуги </a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-item-link txt20" href=""> Доставка </a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-item-link txt20" href=""> О нас </a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__nav-item-link txt20" href=""> Контакты </a>
+        </li>
+      </ul>
+      <div class="header__contact-wrapper">
+        <div class="header__contact-box-wrapper">
+          <div class="header__contact-box-svg-wrapper">
+            <div class="header__contact-box-svg-box">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2442 13.9492C19.7271 14.4335 19.9983 15.0895 19.9983 15.7734C19.9983 16.4573 19.7271 17.1133 19.2442 17.5975L18.4859 18.4717C11.6609 25.0059 -4.94747 8.4017 1.48586 1.55503L2.4442 0.721701C2.929 0.252265 3.57914 -0.00742529 4.25395 -0.00118716C4.92876 0.00505098 5.57398 0.276716 6.05003 0.755034C6.07586 0.780867 7.62003 2.7867 7.62003 2.7867C8.07822 3.26806 8.33328 3.90748 8.3322 4.57204C8.33111 5.2366 8.07396 5.87518 7.6142 6.35503L6.6492 7.56837C7.18324 8.86596 7.96841 10.0452 8.95962 11.0384C9.95082 12.0317 11.1285 12.8192 12.425 13.3559L13.6459 12.385C14.1258 11.9256 14.7642 11.6688 15.4286 11.6678C16.093 11.6669 16.7322 11.922 17.2134 12.38C17.2134 12.38 19.2184 13.9234 19.2442 13.9492Z" fill="#4658FD"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="header__contact-box">
+            <a href="tel:+74991362923" class="header__contact-tel txt20_medium">+7 (499) 136 29 23</a>
+            <p class="header__contact-schedule txt16">с 9:00 до 21:00</p>
+          </div>
+        </div>
+        <div class="header__contact-box-wrapper header__contact-box-wrapper--mail">
+          <div class="header__contact-box-svg-wrapper">
+            <div class="header__contact-box-svg-box">
+              <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 0.500031H5C2 0.500031 0 2.00003 0 5.50003V12.5C0 16 2 17.5 5 17.5H15C18 17.5 20 16 20 12.5V5.50003C20 2.00003 18 0.500031 15 0.500031ZM15.47 6.59003L12.34 9.09003C11.68 9.62003 10.84 9.88003 10 9.88003C9.16 9.88003 8.31 9.62003 7.66 9.09003L4.53 6.59003C4.21 6.33003 4.16 5.85003 4.41 5.53003C4.67 5.21003 5.14 5.15003 5.46 5.41003L8.59 7.91003C9.35 8.52003 10.64 8.52003 11.4 7.91003L14.53 5.41003C14.85 5.15003 15.33 5.20003 15.58 5.53003C15.84 5.85003 15.79 6.33003 15.47 6.59003Z" fill="#4658FD"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="header__contact-box">
+            <a href="mailto:forexample@.com" class="header__contact-tel txt20_medium">forexample@.com</a>
+          </div>
+        </div>
+        <button class="header__contact-button button" data-popup="#popup__application">
+          <span class="button-tel-svg-wrapper">
+            <span class="button-tel-svg-box">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.7035 12.291C17.1059 12.6945 17.3319 13.2412 17.3319 13.8111C17.3319 14.381 17.1059 14.9277 16.7035 15.3313L16.0715 16.0597C10.384 21.5049 -3.45625 7.66806 1.90486 1.9625L2.70347 1.26806C3.10748 0.876859 3.64926 0.660451 4.2116 0.665649C4.77394 0.670848 5.31163 0.897235 5.70833 1.29583C5.72986 1.31736 7.01667 2.98889 7.01667 2.98889C7.39849 3.39002 7.61104 3.92287 7.61014 4.47667C7.60923 5.03047 7.39494 5.56262 7.01181 5.9625L6.20764 6.97361C6.65267 8.05494 7.30699 9.03767 8.13299 9.86535C8.959 10.693 9.94041 11.3493 11.0208 11.7965L12.0382 10.9875C12.4381 10.6047 12.9702 10.3906 13.5238 10.3898C14.0775 10.3891 14.6101 10.6016 15.0111 10.9833C15.0111 10.9833 16.6819 12.2694 16.7035 12.291Z" fill="#CFFA73"></path>
+              </svg>
+            </span>
+          </span>
+          <span class="button-text">Оставить заявку</span>
+          <span class="button-arr-svg-box">
+            <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 7H20M20 7L14.5446 1M20 7L14.5446 13" stroke="url(#paint0_linear_1507_622)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <defs>
+                <linearGradient id="paint0_linear_1507_622" x1="-14.5" y1="7" x2="46" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#CFFA73"></stop>
+                  <stop offset="1" stop-color="white"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+</header>
+
+      <div id="popup__success" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M18 2L2 18" stroke="#0E1C15" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+            <path d="M2 2L18 18" stroke="#0E1C15" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-img-box">
+          <img src="./assets/images/popup-img.webp" alt="">
+        </div>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-text-box">
+            <p class="popup__body-content-box-title tl3">Ваша заявка отправлена</p>
+            <p class="popup__body-content-box-desk popup__body-content-box-desk--short txt20">
+              Наш менеджер с скоро свяжется с Вами для уточнения деталей!
+            </p>
+          </div>
+          <button data-close="" class="popup__button button">
+            <span class="button-tel-svg-wrapper">
+              <span class="button-tel-svg-box">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.7035 12.291C17.1059 12.6945 17.3319 13.2412 17.3319 13.8111C17.3319 14.381 17.1059 14.9277 16.7035 15.3313L16.0715 16.0597C10.384 21.5049 -3.45625 7.66806 1.90486 1.9625L2.70347 1.26806C3.10748 0.876859 3.64926 0.660451 4.2116 0.665649C4.77394 0.670848 5.31163 0.897235 5.70833 1.29583C5.72986 1.31736 7.01667 2.98889 7.01667 2.98889C7.39849 3.39002 7.61104 3.92287 7.61014 4.47667C7.60923 5.03047 7.39494 5.56262 7.01181 5.9625L6.20764 6.97361C6.65267 8.05494 7.30699 9.03767 8.13299 9.86535C8.959 10.693 9.94041 11.3493 11.0208 11.7965L12.0382 10.9875C12.4381 10.6047 12.9702 10.3906 13.5238 10.3898C14.0775 10.3891 14.6101 10.6016 15.0111 10.9833C15.0111 10.9833 16.6819 12.2694 16.7035 12.291Z" fill="#CFFA73"></path>
+                </svg>
+              </span>
+            </span>
+            <span class="button-text">На главную</span>
+            <span class="button-arr-svg-box">
+              <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7H20M20 7L14.5446 1M20 7L14.5446 13" stroke="url(#paint0_linear_1507_622)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <defs>
+                  <linearGradient id="paint0_linear_1507_622" x1="-14.5" y1="7" x2="46" y2="22" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#CFFA73"></stop>
+                    <stop offset="1" stop-color="white"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup__application" aria-hidden="true" class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__body">
+        <button data-close="" type="button" class="popup__body-close-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M18 2L2 18" stroke="#0E1C15" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+            <path d="M2 2L18 18" stroke="#0E1C15" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="popup__body-img-box">
+          <img src="./assets/images/popup-img.webp" alt="">
+        </div>
+        <div class="popup__body-content-box">
+          <div class="popup__body-content-box-text-box">
+            <p class="popup__body-content-box-title tl3">Оставьте заявку</p>
+            <p class="popup__body-content-box-desk txt20">
+              Если у Вас есть вопросы, оставьте заявку и наш менеджер свяжется с Вами в ближайшее время.
+            </p>
+          </div>
+          <form data-popup-message="#popup__success" data-dev="" action="#" class="popup__application-form">
+            <div class="popup__application-input-group input-group input-group--black">
+              <div class="popup__application-form-input-wrapper form__input-wrapper">
+                <input class="popup__application-input input--name txt20" type="text" placeholder="Имя" data-validate="" data-required="" autocomplete="off" name="form[]">
+              </div>
+              <span class="error-span txt16">Поле не заполнено</span>
+            </div>
+            <div class="popup__application-input-group input-group input-group--black popup__label--required">
+              <div class="popup__application-form-input-wrapper form__input-wrapper">
+                <input class="popup__application-input input--tel txt20 phone-mask" type="text" placeholder="Телефон" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+              </div>
+              <span class="error-span txt16">Поле не заполнено</span>
+            </div>
+            <p class="popup__application-subtitle txt20">
+              Нажимая на кнопку “отправить” Вы соглашаетесь на обработку персональных данных
+            </p>
+            <button class="popup__button button" type="submit">
+              <span class="button-tel-svg-wrapper">
+                <span class="button-tel-svg-box">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.7035 12.291C17.1059 12.6945 17.3319 13.2412 17.3319 13.8111C17.3319 14.381 17.1059 14.9277 16.7035 15.3313L16.0715 16.0597C10.384 21.5049 -3.45625 7.66806 1.90486 1.9625L2.70347 1.26806C3.10748 0.876859 3.64926 0.660451 4.2116 0.665649C4.77394 0.670848 5.31163 0.897235 5.70833 1.29583C5.72986 1.31736 7.01667 2.98889 7.01667 2.98889C7.39849 3.39002 7.61104 3.92287 7.61014 4.47667C7.60923 5.03047 7.39494 5.56262 7.01181 5.9625L6.20764 6.97361C6.65267 8.05494 7.30699 9.03767 8.13299 9.86535C8.959 10.693 9.94041 11.3493 11.0208 11.7965L12.0382 10.9875C12.4381 10.6047 12.9702 10.3906 13.5238 10.3898C14.0775 10.3891 14.6101 10.6016 15.0111 10.9833C15.0111 10.9833 16.6819 12.2694 16.7035 12.291Z" fill="#CFFA73"></path>
+                  </svg>
+                </span>
+              </span>
+              <span class="button-text">Отправить</span>
+              <span class="button-arr-svg-box">
+                <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 7H20M20 7L14.5446 1M20 7L14.5446 13" stroke="url(#paint0_linear_1507_622)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_1507_622" x1="-14.5" y1="7" x2="46" y2="22" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#CFFA73"></stop>
+                      <stop offset="1" stop-color="white"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <main>
+        <section class="delivery-banner">
+  <div class="container">
+    <div class="delivery-banner__content">
+      <p class="tl2">Доставка</p>
+      <div class="delivery-banner__list-box">
+        <div class="delivery-banner__list">
+          <p class="tl5">В пределах МКАД бесплатно</p>
+          <ul class="delivery-banner__list-inner">
+            <li class="delivery-banner__list-item">
+              <span class="delivery-banner__list-item-num">01</span>
+              <div class="delivery-banner__list-item-body">
+                <p class="delivery-banner__list-item-title txt20">Для САО, СВАО, СЗАО</p>
+                <p class="delivery-banner__list-item-text txt20">
+                  минимальный заказ от
+                  <strong>5000 р</strong>
+                </p>
+              </div>
+            </li>
+
+            <li class="delivery-banner__list-item">
+              <span class="delivery-banner__list-item-num">02</span>
+              <div class="delivery-banner__list-item-body">
+                <p class="delivery-banner__list-item-title txt20">Остальные районы</p>
+                <p class="delivery-banner__list-item-text txt20">
+                  минимальный заказ от
+                  <strong>10 000 р</strong>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="delivery-banner__list">
+          <p class="tl5">За МКАД</p>
+          <ul class="delivery-banner__list-inner">
+            <li class="delivery-banner__list-item">
+              <span class="delivery-banner__list-item-num">01</span>
+              <div class="delivery-banner__list-item-body">
+                <p class="delivery-banner__list-item-title txt20">
+                  Стоимость доставки обсуждается индивидуально
+                </p>
+                <p class="delivery-banner__list-item-text txt20">
+                  минимальный заказ <br>
+                  <strong>от 5000 р до 10 000р</strong>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery-banner__map">
+      <div class="delivery-banner__map-img">
+        <img src="../assets/images/map-img.webp" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="how-make-order">
+  <div class="container">
+    <div class="how-make-order__inner">
+      <p class="how-make-order__header-title tl2">Оплата заказа</p>
+      <div class="how-make-order__content-box">
+        <ul class="how-make-order__list">
+          <li class="how-make-order__item">
+            <p class="how-make-order__item-num tl3">01</p>
+            <div class="how-make-order__item-desk-box">
+              <div class="how-make-order__item-desk-svg-wrapper">
+                <div class="how-make-order__item-desk-svg-box">
+                  <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5 4.00006H4.5C4.07828 3.99929 3.66143 3.90996 3.27643 3.73787C2.89142 3.56578 2.54684 3.31476 2.265 3.00106C2.54598 2.68616 2.89034 2.43419 3.27551 2.26169C3.66068 2.08918 4.07796 2.00002 4.5 2.00006H22.5C23.808 1.99406 23.807 0.00506104 22.5 6.10352e-05H4.5C3.17392 6.10352e-05 1.90215 0.526845 0.964466 1.46453C0.0267842 2.40221 -0.5 3.67398 -0.5 5.00006L-0.5 15.0001C-0.5 16.3261 0.0267842 17.5979 0.964466 18.5356C1.90215 19.4733 3.17392 20.0001 4.5 20.0001H20.5C21.2956 20.0001 22.0587 19.684 22.6213 19.1214C23.1839 18.5588 23.5 17.7957 23.5 17.0001V7.00006C23.5 6.20441 23.1839 5.44135 22.6213 4.87874C22.0587 4.31613 21.2956 4.00006 20.5 4.00006ZM19.5 13.0001C18.192 12.9941 18.192 11.0061 19.5 11.0001C20.808 11.0061 20.808 12.9941 19.5 13.0001Z" fill="#4658FD"></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="how-make-order__item-desk-text txt20">Наличными курьеру</p>
+            </div>
+            <p class="how-make-order__item-desk-link link">при получении</p>
+          </li>
+          <li class="how-make-order__item">
+            <p class="how-make-order__item-num tl3">02</p>
+            <div class="how-make-order__item-desk-box">
+              <div class="how-make-order__item-desk-svg-wrapper">
+                <div class="how-make-order__item-desk-svg-box">
+                  <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.5 0.000244141H4.5C3.17441 0.001832 1.90356 0.529126 0.96622 1.46646C0.028882 2.4038 -0.498412 3.67465 -0.5 5.00024H23.5C23.4984 3.67465 22.9711 2.4038 22.0338 1.46646C21.0964 0.529126 19.8256 0.001832 18.5 0.000244141ZM-0.5 13.0002C-0.498412 14.3258 0.028882 15.5967 0.96622 16.534C1.90356 17.4714 3.17441 17.9987 4.5 18.0002H18.5C19.8256 17.9987 21.0964 17.4714 22.0338 16.534C22.9711 15.5967 23.4984 14.3258 23.5 13.0002V7.00024H-0.5V13.0002ZM6.5 12.5002C6.5 12.7969 6.41203 13.0869 6.2472 13.3336C6.08238 13.5803 5.84811 13.7725 5.57403 13.8861C5.29994 13.9996 4.99834 14.0293 4.70736 13.9714C4.41639 13.9135 4.14912 13.7707 3.93934 13.5609C3.72956 13.3511 3.5867 13.0839 3.52882 12.7929C3.47094 12.5019 3.50065 12.2003 3.61418 11.9262C3.72771 11.6521 3.91997 11.4179 4.16664 11.253C4.41332 11.0882 4.70333 11.0002 5 11.0002C5.39782 11.0002 5.77936 11.1583 6.06066 11.4396C6.34196 11.7209 6.5 12.1024 6.5 12.5002Z" fill="#4658FD"></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="how-make-order__item-desk-text txt20">Переводом с <br>карты на карту</p>
+            </div>
+            <p class="how-make-order__item-desk-link link">система быстрых платежей</p>
+          </li>
+          <li class="how-make-order__item">
+            <p class="how-make-order__item-num tl3">03</p>
+            <div class="how-make-order__item-desk-box">
+              <div class="how-make-order__item-desk-svg-wrapper">
+                <div class="how-make-order__item-desk-svg-box">
+                  <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.6464 4.64669C19.9614 4.96167 19.7383 5.50024 19.2929 5.50024H15.5C15.2239 5.50024 15 5.27639 15 5.00024V1.20735C15 0.761898 15.5386 0.538815 15.8536 0.853798L19.6464 4.64669ZM20.5 7.00024V22.0002C20.5 23.1048 19.6046 24.0002 18.5 24.0002H2.5C1.39543 24.0002 0.5 23.1048 0.5 22.0002V3.00024C0.5 2.20459 0.816071 1.44153 1.37868 0.878924C1.94129 0.316315 2.70435 0.000244141 3.5 0.000244141L13.5 0.000244141V5.00024C13.5 6.10481 14.3954 7.00024 15.5 7.00024H20.5ZM5.5 15.0002C5.5 15.5525 5.94772 16.0002 6.5 16.0002H11.5C12.0523 16.0002 12.5 15.5525 12.5 15.0002C12.5 14.448 12.0523 14.0002 11.5 14.0002H6.5C5.94772 14.0002 5.5 14.448 5.5 15.0002ZM15.5 19.0002C15.5 18.448 15.0523 18.0002 14.5 18.0002H6.5C5.94772 18.0002 5.5 18.448 5.5 19.0002C5.5 19.5525 5.94772 20.0002 6.5 20.0002H14.5C15.0523 20.0002 15.5 19.5525 15.5 19.0002ZM15.5 11.0002C15.5 10.448 15.0523 10.0002 14.5 10.0002H6.5C5.94772 10.0002 5.5 10.448 5.5 11.0002C5.5 11.5525 5.94772 12.0002 6.5 12.0002H14.5C15.0523 12.0002 15.5 11.5525 15.5 11.0002Z" fill="#4658FD"></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="how-make-order__item-desk-text txt20">Через расчётный счет организации</p>
+            </div>
+            <p class="how-make-order__item-desk-link link">для юридических лиц</p>
+          </li>
+        </ul>
+        <div class="how-make-order__info-box">
+          <div class="how-make-order__title-wrapper">
+            <div class="how-make-order__title-box how-make-order__title-box--black">
+              <p class="how-make-order__title tl3">
+                <span>Закажите</span>
+                <span>пробный обед </span>
+              </p>
+            </div>
+            <div class="how-make-order__title-box how-make-order__title-box--blue">
+              <p class="how-make-order__title-shadow tl3">
+                <span>Закажите </span>
+                <span>пробный обед</span>
+              </p>
+            </div>
+          </div>
+          <div class="how-make-order__text-box">
+            <p class="how-make-order__subtitle txt20">
+              Устройте дегустацию наших блюд, чтобы убедиться в их качестве. Мы привезем обеды от 1 шт для
+              пробы с бесплатной доставкой!
+            </p>
+            <button class="how-make-order__contact-button button" data-popup="#popup__application">
+              <span class="button-tel-svg-wrapper">
+                <span class="button-tel-svg-box">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.7035 12.291C17.1059 12.6945 17.3319 13.2412 17.3319 13.8111C17.3319 14.381 17.1059 14.9277 16.7035 15.3313L16.0715 16.0597C10.384 21.5049 -3.45625 7.66806 1.90486 1.9625L2.70347 1.26806C3.10748 0.876859 3.64926 0.660451 4.2116 0.665649C4.77394 0.670848 5.31163 0.897235 5.70833 1.29583C5.72986 1.31736 7.01667 2.98889 7.01667 2.98889C7.39849 3.39002 7.61104 3.92287 7.61014 4.47667C7.60923 5.03047 7.39494 5.56262 7.01181 5.9625L6.20764 6.97361C6.65267 8.05494 7.30699 9.03767 8.13299 9.86535C8.959 10.693 9.94041 11.3493 11.0208 11.7965L12.0382 10.9875C12.4381 10.6047 12.9702 10.3906 13.5238 10.3898C14.0775 10.3891 14.6101 10.6016 15.0111 10.9833C15.0111 10.9833 16.6819 12.2694 16.7035 12.291Z" fill="#CFFA73"></path>
+                  </svg>
+                </span>
+              </span>
+              <span class="button-text">Оставить заявку</span>
+              <span class="button-arr-svg-box">
+                <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 7H20M20 7L14.5446 1M20 7L14.5446 13" stroke="url(#paint0_linear_1507_622)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_1507_622" x1="-14.5" y1="7" x2="46" y2="22" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#CFFA73"></stop>
+                      <stop offset="1" stop-color="white"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="how-we-working">
+  <div class="container">
+    <p class="tl2">Как мы работаем</p>
+
+    <ul class="how-we-working__list">
+      <li class="how-we-working__list-item">
+        <p class="how-we-working__list-item-title tl4">Оформите заказ</p>
+        <p class="how-we-working__list-item-text txt20">
+          Заказы принимаются <strong>до 16:00</strong> текущего дня на следующий день.
+        </p>
+        <span class="how-we-working__list-item-num tl3">01</span>
+      </li>
+
+      <li class="how-we-working__list-item">
+        <p class="how-we-working__list-item-title tl4">Согласуйте состав обеда</p>
+        <p class="how-we-working__list-item-text txt20">
+          Готовим еду с утра <strong>в день доставки</strong>. Блюда доставляются в одноразовой пластиковой
+          посуде для подогрева.
+        </p>
+        <span class="how-we-working__list-item-num tl3">02</span>
+      </li>
+
+      <li class="how-we-working__list-item">
+        <p class="how-we-working__list-item-title tl4">Ждите вкусную еду</p>
+        <p class="how-we-working__list-item-text txt20">
+          Заказы доставляются <strong>с 9-00 до 15-00</strong>. Можем доставить за пределы КАД. Позвоните и мы
+          посчитаем для Вас стоимость доставки.
+        </p>
+        <span class="how-we-working__list-item-num tl3">03</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__top-inner">
+        <div class="footer__top-logo-box">
+          <div class="footer__top-logo-wrapper">
+            <a class="footer__top-logo logo" href="#"> LOGO </a>
+            <p class="footer__top-logo-text txt16">Вкусная <br>и разнообразная еда</p>
+          </div>
+          <div class="footer__contact-wrapper">
+            <div class="footer__contact-box">
+              <a href="tel:+74991362923" class="footer__contact-link txt20_medium">+7 (499) 136 29 23</a>
+              <p class="footer__contact-schedule txt16">с 9:00 до 21:00</p>
+            </div>
+
+            <div class="footer__contact-box">
+              <a href="mailto:forexample@.com" class="footer__contact-link txt20_medium">forexample@.com</a>
+            </div>
+          </div>
+        </div>
+        <nav class="footer__top-nav">
+          <ul class="footer__top-nav-list">
+            <li class="footer__top-nav-item">
+              <a href="" class="footer__top-nav-item-link txt20_medium">Корпоративное питание</a>
+            </li>
+            <li class="footer__top-nav-item">
+              <a href="" class="footer__top-nav-item-link txt20_medium">Доставка</a>
+            </li>
+            <li class="footer__top-nav-item">
+              <a href="" class="footer__top-nav-item-link txt20_medium">О нас</a>
+            </li>
+            <li class="footer__top-nav-item">
+              <a href="" class="footer__top-nav-item-link txt20_medium">Услуги</a>
+            </li>
+            <li class="footer__top-nav-item">
+              <a href="" class="footer__top-nav-item-link txt20_medium">Статьи</a>
+            </li>
+            <li class="footer__top-nav-item">
+              <a href="" class="footer__top-nav-item-link txt20_medium">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="footer__top-form" data-popup-message="#popup__success" data-dev="" action="#">
+          <div class="footer__top-input-group input-group input-group--white">
+            <div class="footer__top-form-input-wrapper form__input-wrapper">
+              <input class="footer__top-input input--tel txt20 phone-mask" type="text" placeholder="Телефон" data-validate="" data-required="tel" autocomplete="off" name="form[]">
+            </div>
+            <span class="error-span txt16">Поле не заполнено</span>
+          </div>
+          <button class="footer__top-button button" type="submit">
+            <span class="button-tel-svg-wrapper">
+              <span class="button-tel-svg-box">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.7035 12.291C17.1059 12.6945 17.3319 13.2412 17.3319 13.8111C17.3319 14.381 17.1059 14.9277 16.7035 15.3313L16.0715 16.0597C10.384 21.5049 -3.45625 7.66806 1.90486 1.9625L2.70347 1.26806C3.10748 0.876859 3.64926 0.660451 4.2116 0.665649C4.77394 0.670848 5.31163 0.897235 5.70833 1.29583C5.72986 1.31736 7.01667 2.98889 7.01667 2.98889C7.39849 3.39002 7.61104 3.92287 7.61014 4.47667C7.60923 5.03047 7.39494 5.56262 7.01181 5.9625L6.20764 6.97361C6.65267 8.05494 7.30699 9.03767 8.13299 9.86535C8.959 10.693 9.94041 11.3493 11.0208 11.7965L12.0382 10.9875C12.4381 10.6047 12.9702 10.3906 13.5238 10.3898C14.0775 10.3891 14.6101 10.6016 15.0111 10.9833C15.0111 10.9833 16.6819 12.2694 16.7035 12.291Z" fill="#CFFA73"></path>
+                </svg>
+              </span>
+            </span>
+            <span class="button-text">Оставить заявку</span>
+            <span class="button-arr-svg-box">
+              <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 7H20M20 7L14.5446 1M20 7L14.5446 13" stroke="url(#paint0_linear_1507_622)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <defs>
+                  <linearGradient id="paint0_linear_1507_622" x1="-14.5" y1="7" x2="46" y2="22" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#CFFA73"></stop>
+                    <stop offset="1" stop-color="white"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <p class="footer__bottom-copy txt16">© Все права защищены.</p>
+        <a href="#" class="footer__bottom-request-link">
+          <div class="footer__bottom-request-link-text-box">
+            <p class="footer__bottom-request-link-text">Разработано</p>
+            <p class="footer__bottom-request-link-logo">Request <span>Design</span></p>
+          </div>
+          <div class="footer__bottom-request-link-svg-box">
+            <img src="./assets/images/request-logo.svg" alt="">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>
